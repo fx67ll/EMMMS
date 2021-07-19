@@ -13,16 +13,20 @@ Router.prototype.push = function push(location) {
 
 import store from '@/store/index.js'
 
-export const fx67llRoutes = [
-	{
+export const fx67llRoutes = [{
 		path: '/',
+		name: '404',
+		component: () => import('@v/index-404.vue') // 404
+	},
+	{
+		path: '/index',
 		name: 'index',
-		component: () => import('@v/index.vue') //首页
+		component: () => import('@v/index.vue') // 首页
 	},
 	{
 		path: '/back',
 		name: 'back',
-		component: () => import('@v/index-back.vue') //备份
+		component: () => import('@v/index-back.vue') // 备份，主要用于看老代码
 	},
 ]
 
