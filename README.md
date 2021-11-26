@@ -1,6 +1,9 @@
 # EMMMS
 Esophagus Medical Model Management System
 
+## 0.1.2.20211127
+* 修改favicon.ico  
+
 ## 0.1.1.20210718
 * 项目终止，改为404  
 * 添加测试模型`Human-005`，供不时之需  
