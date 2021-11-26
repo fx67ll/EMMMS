@@ -3,6 +3,7 @@ Esophagus Medical Model Management System
 
 ## 0.1.2.20211127
 * 修改favicon.ico  
+* 测试jenkins持续部署  
 
 ## 0.1.1.20210718
 * 项目终止，改为404  
