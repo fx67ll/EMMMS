@@ -10,12 +10,20 @@
 			<span class="door right"></span>
 		</nav>
 		<h1>Error 404</h1>
-		<p>糟糕，您要找的网页消失了，请联系管理员充值续费。。。</p>
+		<!-- <p>糟糕，您要找的网页消失了，请联系管理员充值续费。。。</p>
 		<div class="fx67ll-footer">
 			Designed & Powered by
 			<a href="https://fx67ll.com" target="_blank">fx67ll</a>
 			&#12288; Copyright© 2018-{{ year }} &#12288;
 			<a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">皖ICP备18017174号</a>
+		</div> -->
+		<!-- for lubenwei -->
+		<p>很抱歉，网页正在按照备案整改要求整改，敬请期待。。。</p>
+		<div class="fx67ll-footer">
+			Designed & Powered by
+			<a href="" target="_blank">zichengc</a>
+			&#12288; Copyright© 2018-{{ year }} &#12288;
+			<a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">苏ICP备2021005710号</a>
 		</div>
 	</div>
 </template>
