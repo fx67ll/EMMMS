@@ -4,7 +4,7 @@
 			<a class="book home-page" href="https://fx67ll.com" target="_blank">fx67ll.com</a>
 			<a class="book about-us" href="https://nav.fx67ll.com" target="_blank">ABOUT ME</a>
 			<a class="book contact" href="https://fx67ll.xyz" target="_blank">fx67ll.xyz</a>
-			<a class="book faq" href="https://github.com/fx67ll" target="_blank">F.A.Q.</a>
+			<a class="book faq" href="" @click="back()">返回上一页</a>
 			<span class="book not-found"></span>
 			<span class="door left"></span>
 			<span class="door right"></span>
@@ -37,6 +37,16 @@ export default {
 		return {
 			year: moment().format('yyyy')
 		};
+	},
+	methods: {
+		back() {
+			if (window.history.length <= 1) {
+				this.$router.push({ path: '/' });
+				return false;
+			} else {
+				this.$router.go(-1);
+			}
+		}
 	}
 };
 </script>

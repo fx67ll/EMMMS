@@ -1,6 +1,9 @@
 # EMMMS
 Esophagus Medical Model Management System
 
+## 0.1.3.20230317
+* 修改并完成通用404模板，应用所有项目  
+
 ## 0.1.2.20211127
 * 修改favicon.ico  
 

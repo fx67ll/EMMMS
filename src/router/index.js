@@ -28,6 +28,10 @@ export const fx67llRoutes = [{
 		name: 'back',
 		component: () => import('@v/index-back.vue') // 备份，主要用于看老代码
 	},
+	{
+		path: '*', // 不存在的地址则重定向页面地址
+		redirect: '/'
+	}
 ]
 
 const router = new Router({
