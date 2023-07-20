@@ -1,6 +1,9 @@
 # EMMMS
 Esophagus Medical Model Management System
 
+## 0.1.4.20230720
+* 新增首页资源加载动画  
+
 ## 0.1.3.20230317
 * 修改并完成通用404模板，应用所有项目  
 
