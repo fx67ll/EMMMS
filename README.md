@@ -1,6 +1,9 @@
 # EMMMS
 Esophagus Medical Model Management System
 
+## 0.1.5.20250731
+* 适配没有内存执行构建的jenkins应用  
+
 ## 0.1.4.20230720
 * 新增首页资源加载动画  
 
