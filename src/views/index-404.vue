@@ -2,7 +2,7 @@
 	<div class="fx67ll-404">
 		<nav class="shelf">
 			<a class="book home-page" href="https://fx67ll.com" target="_blank">fx67ll.com</a>
-			<a class="book contact" href="https://nav.fx67ll.com" target="_blank">ABOUT ME</a>
+			<a class="book contact" href="https://fx67ll.xyz/s/about" target="_blank">About Me</a>
 			<a class="book about-us" href="https://fx67ll.xyz" target="_blank">fx67ll.xyz</a>
 			<a class="book faq" href="" @click="back()">返回上一页</a>
 			<span class="book not-found"></span>
