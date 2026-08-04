@@ -4,8 +4,7 @@
 			<a class="book home-page" href="https://fx67ll.com" target="_blank">个人主页</a>
 			<a class="book contact" href="https://fx67ll.xyz/s/messageboard" target="_blank">联系管理员</a>
 			<a class="book about-us" href="https://fx67ll.xyz" target="_blank">技术博客</a>
-			<!-- <a class="book faq" href="" @click="back()">返回上一页</a> -->
-			<a class="book faq" href="https://nav.fx67ll.com" target="_blank">站点导航</a>
+			<a class="book faq" href="" @click="back()">返回上一页</a>
 			<span class="book not-found"></span>
 			<span class="door left"></span>
 			<span class="door right"></span>
@@ -15,7 +14,7 @@
 		<p>糟糕，当前网页不存在，如有需要请留言咨询~</p>
 		<div class="fx67ll-footer">
 			Designed & Powered by
-			<a href="https://fx67ll.com" target="_blank">fx67ll</a>
+			<a href="https://nav.fx67ll.com" target="_blank">fx67ll</a>
 			&#12288; Copyright© 2018-{{ year }} &#12288;
 			<a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">皖ICP备18017174号</a>
 		</div>
@@ -40,14 +39,14 @@ export default {
 		};
 	},
 	methods: {
-		// back() {
-		// 	if (window.history.length <= 1) {
-		// 		this.$router.push({ path: '/' });
-		// 		return false;
-		// 	} else {
-		// 		this.$router.go(-1);
-		// 	}
-		// }
+		back() {
+			if (window.history.length <= 1) {
+				this.$router.push({ path: '/' });
+				return false;
+			} else {
+				this.$router.go(-1);
+			}
+		}
 	}
 };
 </script>
