@@ -27,6 +27,7 @@ body {
 	font-family: 'PFR';
 	color: @grey;
 }
+
 #app {
 	width: 100%;
 	height: 100%;
