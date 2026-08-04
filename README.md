@@ -1,5 +1,11 @@
 # EMMMS
-Esophagus Medical Model Management System
+~~Esophagus Medical Model Management System~~
+
+[**fx67ll's 404 Error Page**](https://404.fx67ll.com)
+
+## 0.2.0.20260804
+* 彻底转型成为`fx67ll's 个人通用404`页面，原立项功能废弃  
+* 优化`404`页面相关文案，提升信息可读性  
 
 ## 0.1.5.20250731
 * 适配没有内存执行构建的jenkins应用  
