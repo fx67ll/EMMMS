@@ -4,7 +4,8 @@
 			<a class="book home-page" href="https://fx67ll.com" target="_blank">个人主页</a>
 			<a class="book contact" href="https://fx67ll.xyz/s/messageboard" target="_blank">联系管理员</a>
 			<a class="book about-us" href="https://fx67ll.xyz" target="_blank">技术博客</a>
-			<a class="book faq" href="" @click="back()">返回上一页</a>
+			<!-- href 为空的锚点必须阻止默认跳转，否则默认导航会取消 $router.go(-1) 的历史回退 -->
+			<a class="book faq" href="" @click.prevent="back()">返回上一页</a>
 			<span class="book not-found"></span>
 			<span class="door left"></span>
 			<span class="door right"></span>

@@ -16,8 +16,18 @@ import store from '@/store/index.js';
 export const fx67llRoutes = [
   {
     path: '/',
+    name: 'home',
+    component: () => import('@v/Home.vue'), // 工具站导航首页
+  },
+  {
+    path: '/time',
+    name: 'time',
+    component: () => import('@v/Time.vue'), // 在线时钟页面
+  },
+  {
+    path: '/404',
     name: '404',
-    component: () => import('@v/404.vue'), // 404 首页
+    component: () => import('@v/404.vue'), // 404页面
   },
   {
     path: '/index',
@@ -30,8 +40,8 @@ export const fx67llRoutes = [
     component: () => import('@v/origin/project-three-back.vue'), // 备份，主要用于看老代码
   },
   {
-    path: '*', // 不存在的地址则重定向页面地址
-    redirect: '/',
+    path: '*', // 不存在的地址则重定向到404页面，保留路由拦截能力
+    redirect: '/404',
   },
 ];
 

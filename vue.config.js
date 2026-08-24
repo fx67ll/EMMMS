@@ -55,15 +55,19 @@ module.exports = {
 		// host: '0.0.0.0',
 		port: 3333,
 		open: false,
-		proxy: {
-			[process.env.VUE_APP_BASE_API]: {
-				target: `http://localhost:3000`,
-				changeOrigin: true,
-				pathRewrite: {
-					['^' + process.env.VUE_APP_BASE_API]: ''
+		// 仅在配置了接口前缀时启用代理：前缀为空字符串时若照常注册，
+		// 会把 /404、/time 等所有未命中静态资源的请求全部转发到后端，导致页面 500
+		proxy: process.env.VUE_APP_BASE_API
+			? {
+					[process.env.VUE_APP_BASE_API]: {
+						target: `http://localhost:3000`,
+						changeOrigin: true,
+						pathRewrite: {
+							['^' + process.env.VUE_APP_BASE_API]: ''
+						}
+					}
 				}
-			}
-		},
+			: undefined,
 		// disableHostCheck: true
 	},
 }
