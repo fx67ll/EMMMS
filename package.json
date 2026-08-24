@@ -1,7 +1,7 @@
 {
 	"name": "EMMMS",
-	"version": "0.2.0",
-	"description": "fx67ll's 404 Error Page",
+	"version": "0.4.0",
+	"description": "fx67ll's Tool",
 	"private": true,
 	"scripts": {
 		"serve": "vue-cli-service serve",
@@ -11,6 +11,8 @@
 		"axios": "^0.21.1",
 		"core-js": "^2.6.5",
 		"element-ui": "^2.14.1",
+		"flipclock": "^0.10.8",
+		"fx67ll-vue-ui": "^0.7.1",
 		"less": "^3.12.2",
 		"less-loader": "^7.0.1",
 		"moment": "^2.28.0",
@@ -34,7 +36,8 @@
 	"keywords": [
 		"fx67ll",
 		"fx67ll.com",
-		"404.fx67ll.com",
+		"tool.fx67ll.com",
+		"clock",
 		"404"
 	],
 	"author": "fx67ll@github.com",
