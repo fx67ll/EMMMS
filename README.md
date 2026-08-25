@@ -6,6 +6,9 @@ Extensible Multi‑function Module Management System
 
 EMMMS 是 fx67ll 的在线工具站点，对多个独立功能模块提供统一管理。
 
+## 0.3.1.20260825
+* 删除老旧内容以及相关废弃文件  
+
 ## 0.3.0.20260824
 * 重新转型成为`fx67ll's 个人在线工具站点`，原立项功能和转型页面均废弃  
 * 新增清新风格工具站导航首页，提供各功能模块统一入口   
@@ -14,7 +17,7 @@ EMMMS 是 fx67ll 的在线工具站点，对多个独立功能模块提供统一
 
 ---
 
-# EMMMS
+## ~~EMMMS History~~
 ~~Esophagus Medical Model Management System~~
 
 [**fx67ll's 404 Error Page**](https://404.fx67ll.com)
