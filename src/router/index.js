@@ -13,11 +13,21 @@ Router.prototype.push = function push(location) {
 
 import store from '@/store/index.js';
 
+// 域名直达：不同域名访问根路径时直接渲染对应页面，地址栏域名保持不变
+// 需配合 Nginx 将 time.fx67ll.com / 404.fx67ll.com 反代到本站点（而非 301 跳转到 tool.fx67ll.com）
+const hostname = window.location.hostname;
+const rootRouteComponent =
+  hostname === 'time.fx67ll.com'
+    ? () => import('@v/Time.vue') // time.fx67ll.com 根路径直接展示在线时钟页面
+    : hostname === '404.fx67ll.com'
+      ? () => import('@v/404.vue') // 404.fx67ll.com 根路径直接展示404页面
+      : () => import('@v/Home.vue'); // 其余情况（含 tool.fx67ll.com）展示工具站导航首页
+
 export const fx67llRoutes = [
   {
     path: '/',
     name: 'home',
-    component: () => import('@v/Home.vue'), // 工具站导航首页
+    component: rootRouteComponent,
   },
   {
     path: '/time',
