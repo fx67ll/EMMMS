@@ -6,9 +6,9 @@
 
 		<main class="emmms-home-main">
 			<header class="emmms-home-head">
-				<span class="emmms-home-badge">EMMMS</span>
+				<span class="emmms-home-badge">在线工具</span>
 				<h1 class="emmms-home-title">fx67ll's Tool</h1>
-				<p class="emmms-home-subtitle">可扩展多功能模块管理系统 · 在线工具合集</p>
+				<p class="emmms-home-subtitle">可扩展多功能模块管理系统</p>
 			</header>
 
 			<!-- 工具导航卡片 -->

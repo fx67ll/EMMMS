@@ -30,16 +30,6 @@ export const fx67llRoutes = [
     component: () => import('@v/404.vue'), // 404页面
   },
   {
-    path: '/index',
-    name: 'index',
-    component: () => import('@v/origin/project-three.vue'), // 立项初衷页面
-  },
-  {
-    path: '/back',
-    name: 'back',
-    component: () => import('@v/origin/project-three-back.vue'), // 备份，主要用于看老代码
-  },
-  {
     path: '*', // 不存在的地址则重定向到404页面，保留路由拦截能力
     redirect: '/404',
   },
