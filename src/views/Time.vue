@@ -36,7 +36,7 @@
 			@click="openConfigPanel">Ctrl+E+Z 设置</button>
 
 		<!-- 合规页脚 -->
-		<fx67ll-footer fontColor="#9aa7b3"></fx67ll-footer>
+		<fx67ll-footer fontColor="#9aa7b3" hoverColor="#42b983"></fx67ll-footer>
 
 		<!-- 悬浮设置面板：快捷键唤起，不挤占页面布局 -->
 		<transition name="ez-home-pop">

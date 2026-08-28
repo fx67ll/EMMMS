@@ -13,32 +13,15 @@
 		<h1>404</h1>
 		<!-- for fx67ll -->
 		<p>糟糕，当前网页不存在，如有需要请留言咨询~</p>
-		<div class="fx67ll-footer">
-			Designed & Powered by
-			<a href="https://nav.fx67ll.com" target="_blank">fx67ll</a>
-			&#12288; Copyright© 2018-{{ year }} &#12288;
-			<a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">皖ICP备18017174号</a>
-		</div>
+		<fx67ll-footer fontColor="#ffffff" hoverColor="#42b983"></fx67ll-footer>
 		<!-- for lubenwei -->
-		<!-- <p>很抱歉，网页正在按照备案整改要求整改，敬请期待。。。</p>
-		<div class="fx67ll-footer">
-			Designed & Powered by
-			<a href="" target="_blank">zichengc</a>
-			&#12288; Copyright© 2018-{{ year }} &#12288;
-			<a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">苏ICP备2021005710号</a>
-		</div> -->
+		<!-- <p>很抱歉，网页正在按照备案整改要求整改，敬请期待。。。</p> -->
 	</div>
 </template>
 
 <script>
-import moment from 'moment';
 export default {
 	name: 'model404',
-	data() {
-		return {
-			year: moment().format('yyyy')
-		};
-	},
 	methods: {
 		back() {
 			if (window.history.length <= 1) {
@@ -55,21 +38,8 @@ export default {
 <style lang="less" scoped="scoped">
 @import '@a/styles/404.less';
 
-.fx67ll-footer {
-	width: 100%;
-	padding: 20px 0;
-	text-align: center;
-	position: absolute;
-	bottom: 0;
-	user-select: text;
+// 保留404页面原有的页脚字号，颜色由组件属性统一控制
+/deep/ .fx67ll-footer {
 	font-size: 14px;
-}
-
-.fx67ll-footer a {
-	color: #ffffff;
-}
-
-.fx67ll-footer a:hover {
-	color: #42b983;
 }
 </style>
