@@ -57,7 +57,7 @@
 		</main>
 
 		<!-- 合规页脚：复用 fx67ll-vue-ui 组件库页脚 -->
-		<fx67ll-footer fontColor="#9aa7b3" homePage="https://nav.fx67ll.com"></fx67ll-footer>
+		<fx67ll-footer fontColor="#9aa7b3"></fx67ll-footer>
 	</div>
 </template>
 
